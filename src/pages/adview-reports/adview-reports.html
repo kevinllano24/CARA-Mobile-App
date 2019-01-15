@@ -1,0 +1,26 @@
+<ion-header >
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Admin View Reports</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngFor="let t of response">
+    <ion-item class="item item-trns">
+      <ion-label>Plate Number : {{t.plateno}}</ion-label>  
+    </ion-item>
+    <ion-item class="item item-trns">
+        <ion-label>Model: {{t.model}}</ion-label>  
+    </ion-item>
+    <ion-item class="item item-trns">
+        <ion-label>Color : {{t.color}}</ion-label>  
+    </ion-item>
+    <ion-item class="item item-trns">
+        <ion-label>Type: {{t.type}}</ion-label>  
+    </ion-item>
+  </ion-list>
+</ion-content>

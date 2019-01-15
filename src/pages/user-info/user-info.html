@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>UserInfo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngFor="let t of response" >
+    <ion-item class="item item-trns">
+      <ion-label>Username : {{t.fullname}}</ion-label>  
+    </ion-item>
+    <ion-item class="item item-trns">
+      <ion-label>Gender : {{t.gender}}</ion-label>
+    </ion-item>
+    <ion-item class="item item-trns">
+      <ion-label>Email : {{t.email}}</ion-label>
+    </ion-item>
+    <ion-item class="item item-trns">
+      <ion-label>Address : {{t.address}}</ion-label>
+    </ion-item>
+    <ion-item class="item item-trns">
+      <ion-label>Contact Number : {{t.contactno}}</ion-label>
+    </ion-item>
+    <ion-item class="item item-trns">
+      <ion-label>Plate Number : {{t.vehicleplateno}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

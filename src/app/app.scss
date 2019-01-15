@@ -1,0 +1,31 @@
+page-report, page-tabs, page-adview-reports {
+    .content, .menu {
+        background-image: url(../assets/imgs/bg.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }  
+    
+    .item.item-trns {
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .menu-inner .item {
+        background-color: #387ef5;
+    }
+
+    .menu-inner > ion-header, 
+    .menu-inner > ion-content {
+        background-color: #123456; 
+    }
+
+    .toolbar-title {
+        color : #fff;
+    }
+     
+    
+}

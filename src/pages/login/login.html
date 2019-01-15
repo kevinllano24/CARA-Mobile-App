@@ -1,0 +1,26 @@
+<ion-header>
+
+</ion-header>
+<ion-content class="bg-image no-scroll" padding>
+		<div class ="let getstart" text-center style="margin-top:180px;">
+      <p style="font-size: 50px;font-weight: 700; color:black; font-family:Georgia, 'Times New Roman', Times, serif; font-style: italic;">CARA</p> 
+    </div>
+    
+    <ion-list style="margin-bottom:0px; margin-top:50px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bolder" >
+      <ion-item  class="item item-trns" >
+      <ion-label floating color="primary"><ion-icon name="contact"></ion-icon> Username</ion-label>
+        <ion-input type="text"  [(ngModel)]= "username"></ion-input>
+      </ion-item>
+
+      <ion-item  class="item item-trns">
+      <ion-label floating color="primary"><ion-icon name="lock"></ion-icon> Password</ion-label>
+        <ion-input type="password"  [(ngModel)]= "password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+
+    <button full round ion-button color="primary" (click)="doLogin()">Login</button>
+</ion-content>
+<ion-footer>
+    <button class="item item-trns" full round ion-button (click)="registerpage()">SignUp</button>
+</ion-footer>

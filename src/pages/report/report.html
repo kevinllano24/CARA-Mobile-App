@@ -1,0 +1,38 @@
+<ion-header >
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Report</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bg-image">
+  <ion-item class="item item-trns">
+      <ion-label floating>Plate Number</ion-label>
+      <ion-input type="text"  [(ngModel)]= "plateNo"></ion-input>
+  </ion-item>
+  <ion-item class="item item-trns">
+      <ion-label floating >Vehicle Model</ion-label>
+      <ion-input type="text"  [(ngModel)]= "model"></ion-input>
+  </ion-item>
+  
+  <ion-item class="item item-trns">
+      <ion-label floating>Vehicle Color</ion-label>
+      <ion-input type="text"  [(ngModel)]= "color"></ion-input>
+  </ion-item>
+  
+  <ion-item class="item item-trns">
+          <ion-label floating>Vehicle Type</ion-label>
+          <ion-input type="text" [(ngModel)]= "type"></ion-input>
+  </ion-item>
+
+  <ion-item class="item item-trns">
+    <ion-label floating>Place of Incident</ion-label>
+    <ion-input type="text" [(ngModel)]= "poi"></ion-input>
+</ion-item>
+
+  <button full round ion-button class="margin grad" (click)="doReport()">Report</button>
+  <button ion-button color="primary" (click)="logout()">Log Out</button>
+</ion-content>

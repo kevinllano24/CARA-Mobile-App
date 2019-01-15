@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="no-scroll bg-image" padding>
+	<ion-list >
+    <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary" >Username:</ion-label>
+	    <ion-input type="text" [(ngModel)] = "username" ></ion-input>
+	  </ion-item>
+
+    <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Password:</ion-label>
+	    <ion-input type="password" [(ngModel)] = "password" ></ion-input>
+	  </ion-item>
+
+    <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Email:</ion-label>
+	    <ion-input type="email" [(ngModel)] = "email" ></ion-input>
+	  </ion-item>
+
+	  <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Full Name:</ion-label>
+	    <ion-input type="text" [(ngModel)] = "fullname" ></ion-input>
+	  </ion-item>
+
+	  <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Address:</ion-label>
+	    <ion-input type="text" [(ngModel)] = "address" ></ion-input>
+	  </ion-item>
+	
+	  <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Sex:</ion-label>
+	    <ion-input type="text" [(ngModel)] = "gender" ></ion-input>
+	  </ion-item>
+	
+	  <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Contact Number:</ion-label>
+	    <ion-input type="number" [(ngModel)] = "contactno" ></ion-input>
+	  </ion-item>
+
+	  <ion-item class="item item-trns">
+	  	<ion-label stacked color="primary">Vehicle Plate Number:</ion-label>
+	    <ion-input type="number" [(ngModel)] = "vehicleplateno" ></ion-input>
+	  </ion-item>
+
+	</ion-list>	
+
+	<div padding>
+  		<button full round color="primary" ion-button (click)="doRegister()">Register</button>
+	</div>
+</ion-content>

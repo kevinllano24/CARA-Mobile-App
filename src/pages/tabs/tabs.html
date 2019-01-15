@@ -1,0 +1,7 @@
+<ion-tabs>
+    <ion-tab [root]="reportRoot" tabTitle="Report" tabIcon="md-alert" *ngIf="accounttype == 'user'"></ion-tab>
+    <ion-tab [root]="userinfoRoot" tabTitle="User info" tabIcon="md-person" *ngIf="accounttype == 'user'"></ion-tab>
+
+    <ion-tab [root]="accountsRoot" tabTitle="Accounts" tabIcon="information-circle" *ngIf="accounttype == 'admin'"></ion-tab>
+    <ion-tab [root]="adviewreports" tabTitle="Reports" tabIcon="information-circle" *ngIf="accounttype == 'admin'"></ion-tab>
+</ion-tabs>

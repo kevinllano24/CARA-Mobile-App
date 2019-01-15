@@ -1,0 +1,29 @@
+page-register {
+    .content{
+        background-image: url(../assets/imgs/blur.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      } 
+
+      .item.item-trns {
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .menu-inner .item {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-inner > ion-header, 
+    .menu-inner > ion-content {
+        background-color: rgba(0, 0, 0, 0); 
+    }
+
+    .toolbar-title {
+        color : #fff;
+    }
+}
